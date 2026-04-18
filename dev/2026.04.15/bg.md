@@ -1,0 +1,1 @@
+#version 330 core out vec4 finalColor; uniform vec2 iResolution; uniform float iTime; void main() { vec2 uv = gl_FragCoord.xy / iResolution; float c = 0.5 + 0.5 * cos(iTime + uv.x_10.0 + uv.y_6.0); finalColor = vec4(vec3(c), 1.0); }
